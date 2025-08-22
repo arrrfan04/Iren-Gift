@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesan buat Ka Iren</title>
+    <!-- Memuat Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="page-four" class="page">
+      <h1 class="message-title">Pesan dari Arf'</h1>
+
+      <div class="message-container">
+        <div class="message-box">
+          <p>
+            Dear Ka Iren, terima kasih sudah menjadi rekan kerja yang baik selama ini, sudah bekerja sama dengan baik selama bekerja dan sudah banyak membantu dalam hal pekerjaan, terima kasih sudah sering kasi Apang snack selama disite,
+            terima kasih juga sudah banyak bantu apang ketika ada masalah dengan pekerjaan, semoga ka Iren cepat menikah dengan Ka N yah wkwkwk.
+            <br /><br />
+            Mohon maaf jika ada perkataan dan perlakuan yang mungkin kurang berkenaan, sukses selalu kedepannya Ka Iren.
+          </p>
+        </div>
+
+        <img src="assets/iren.jpeg" alt="Gambar Iren" class="message-image" />
+      </div>
+
+      <a href="page3.html" id="backButton" class="back-button">Kembali</a>
+    </div>
+
+    <script>
+      const backButton = document.getElementById("backButton");
+      backButton.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location.href = this.href;
+        }, 500);
+      });
+    </script>
+  </body>
+</html>
